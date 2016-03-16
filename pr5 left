@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+
+.content-main
+{
+	
+	
+	padding: 40px 30px 20px;
+	background-color: #ccc;
+	position: absolute;
+	top: 60px;
+	right: 20px;
+	width: 360px;
+}
+.form-left
+{
+	float:left;
+	text-align:right;
+	margin-left:14px;
+	width:120px;
+	height: 320px;
+	line-height:160%;
+	margin-right:10px;
+	
+}
+.leftsec
+{
+	float:left;
+	text-align:right;
+	margin-left:14px;
+	width:120px;
+	height: 320px;
+	line-height:140%;
+	position:relative;
+	top:14px;
+	left:-18px;
+	margin-right:10px;
+}
+.form-right
+{
+	color: #aaa;
+    font-size: 14px;
+	line-height:190%;
+}
+.form-warning
+{
+	color:#000;
+}
+.content-main h6 {
+	margin-top: -15px;
+	font-size: 16px;
+	padding: 8px 12px;
+	border-left: 3px solid #ccc;
+}
+.form-submit {
+	width: 100%;
+	height: 40px;
+	background-color: #3553cf;
+	color: #fff;
+	border-radius: 15px;
+	font-weight: 900px;
+}
+
+</style>
+</head>
+ 
+<body>
+<div class="content-main content-form">    
+            <h6>这里以后是一个侧栏，这是侧栏的标题</h6>
+            <form method="post" action="#" name="personInfo">
+                <div class="form-left">
+                    请输入邮箱地址<br>
+                    <br>
+                    请输入密码<br>
+                    请重复输入密码<br>
+                    <div class="leftsec">
+                    性别<br>
+                    城市<br>
+                    爱好<br>
+                    个人描述<br></div>
+                </div>
+                <div class="form-right">
+                    <input type="text" placeholder="这是一个文本输入框"><br>
+                    <span class="form-warning">&nbsp;邮箱地址请按要求格式输入</span><br>
+                    <input type="password" placeholder="*********"><br>
+                    <input type="password" placeholder="*********"><br>
+                    <span class="form-warning">&nbsp;密码请为6-16位英文数字</span><br>
+                    <label><input type="radio" name="sex" value="man" checked> 男</label>
+                    <label><input type="radio" name="sex" value="woman"> 女</label><br>
+                    <select>
+                        <option value="beijing" selected>北京</option>
+                        <option value="shanghai">上海</option>
+
+                    </select><br>
+                    <label><input type="checkbox" name="hobby" value="sports"> 运动</label>&nbsp;&nbsp;  
+                    <label><input type="checkbox" name="hobby" value="art"> 艺术</label>&nbsp;&nbsp;
+                    <label><input type="checkbox" name="hobby" value="science"> 科学</label><br>
+                    <textarea class="form-text" name="self-description" cols="24" rows="3" placeholder="这是一个输入框，输入您的个人描述"></textarea>
+                </div>
+                <input class="form-submit" type="submit" value="确认提交">
+            </form>
+        </div>    
+    </div>          
+</body>
+</html>
